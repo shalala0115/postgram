@@ -41,4 +41,5 @@
 # amplify-gradle-config.json
 # amplifytools.xcconfig
 # .secret-*
+# node_modules
 node_modules
