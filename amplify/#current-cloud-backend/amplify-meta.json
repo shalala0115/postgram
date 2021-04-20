@@ -1,0 +1,80 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-postagram-dev-182440-authRole",
+      "UnauthRoleArn": "arn:aws:iam::697845659730:role/amplify-postagram-dev-182440-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::697845659730:role/amplify-postagram-dev-182440-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-postagram-dev-182440-deployment",
+      "UnauthRoleName": "amplify-postagram-dev-182440-unauthRole",
+      "StackName": "amplify-postagram-dev-182440",
+      "StackId": "arn:aws:cloudformation:us-west-2:697845659730:stack/amplify-postagram-dev-182440/2f82bf10-a177-11eb-af94-0a9d7365064d",
+      "AmplifyAppId": "d3nvbpvshegsiw"
+    }
+  },
+  "api": {
+    "Postgram": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "public"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "ej32lo7ijjht7pvmyn4mgpe3ze",
+        "GraphQLAPIEndpointOutput": "https://grihdnhlrfb7llteu2rgxawgzq.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ydimesmnqndi7ec2qy3xao3wse"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-postagram-dev-182440-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiPostgram"
+      },
+      "lastPushTimeStamp": "2021-04-20T01:59:04.380Z",
+      "lastPushDirHash": "PWWUF7nJKj1DtO0TcGGoNYHO+lI="
+    }
+  },
+  "auth": {
+    "postagramdaa5fce3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-postagram-dev-182440-deployment/amplify-cfn-templates/auth/postagramdaa5fce3-cloudformation-template.yml",
+        "logicalId": "authpostagramdaa5fce3"
+      },
+      "lastPushTimeStamp": "2021-04-20T01:59:04.389Z",
+      "output": {
+        "UserPoolId": "us-west-2_dIpf1cImA",
+        "AppClientIDWeb": "7qglalu6lj38j5eve7vp7cakeu",
+        "AppClientID": "35k5me4buadrid3v9cmlrrp9jr",
+        "IdentityPoolId": "us-west-2:20516bd4-7af7-4928-9462-e48384fa03e7",
+        "IdentityPoolName": "postagramdaa5fce3_identitypool_daa5fce3__dev",
+        "UserPoolName": "postagramdaa5fce3_userpool_daa5fce3"
+      },
+      "lastPushDirHash": "1QDjcu/g0BDdbmgFtQVjmw/XcGM="
+    }
+  },
+  "storage": {
+    "images": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-postagram-dev-182440-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimages"
+      },
+      "lastPushTimeStamp": "2021-04-20T01:59:04.389Z",
+      "output": {
+        "BucketName": "postagramb545f858330d4209b8e0e3ce046e93d5182440-dev",
+        "Region": "us-west-2"
+      },
+      "lastPushDirHash": "RxO0rzfVO8AmS0+bqVXBlcdSY2Y="
+    }
+  }
+}
